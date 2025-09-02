@@ -1,0 +1,19 @@
+spring:
+  profiles:
+      active: dev
+---
+spring: 
+  config:
+    activate:
+      on-profile: dev
+
+greeting: 
+  message: "Hi there from dev"
+---
+spring: 
+  config:
+    activate:
+      on-profile: prod
+
+greeting:
+  message: "Welcome to production"
